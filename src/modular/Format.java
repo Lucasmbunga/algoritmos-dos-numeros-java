@@ -1,8 +1,8 @@
 package modular;
 
 public class Format {
-    public static int exponenciacaoModular(int base, int expoente, int mod) {
-        int resultado = 1;
+    public static long exponenciacaoModular(long base, long expoente, long mod) {
+        long resultado = 1;
         base = base % mod;
 
         while (expoente > 0) {
@@ -15,5 +15,13 @@ public class Format {
             base = (base * base) % mod;
         }
         return resultado;
+    }
+
+    // Encontra o inverso modular usando o Teorema de Fermat (Apenas se 'p' for PRIMO)
+    public static long inversoFermat(long a, long p) {
+        if (a % p == 0) {
+            throw new ArithmeticException("O inverso não existe pois 'a' é múltiplo de 'p'.");
+        }
+        return exponenciacaoModular(a, p - 2, p);
     }
 }
