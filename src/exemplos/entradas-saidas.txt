@@ -1,0 +1,58 @@
+     CASOS DE TESTE PRÁTICOS - ALGORITMOS DOS NÚMEROS (AED-II)
+
+
+TESTE 1: MÁXIMO DIVISOR COMUM (MDC SIMPLES vs ALGORITMO DE EUCLIDES)
+Entrada:
+  a = 1260
+  b = 720
+
+Saída na Consola:
+  [MDC Simples] Resultado: 180
+  [MDC Euclides] Resultado: 180
+
+TESTE 2: TESTE DE PRIMALIDADE E FATORIZAÇÃO DE INTEIROS
+Entrada 1 (Número Primo):
+  n = 997
+Saída na Consola:
+  O número 997 é PRIMO? true
+
+Entrada 2 (Número Composto):
+  n = 210
+Saída na Consola:
+  O número 210 é COMPOSTO
+  Fatores primos de 210: 2 * 3 * 5 * 7
+
+TESTE 3: ARITMÉTICA MODULAR E TEREMA DE FERMAT
+Entrada (Exponenciação Modular Rápida):
+  Base = 4
+  Expoente = 13
+  Módulo = 497
+
+Saída na Consola:
+  Resultado da exponenciação modular: 445
+
+TESTE 4: FUNÇÃO TOTIENTE DE EULER
+Entrada:
+  n = 9
+Saída na Consola:
+  Phi(9) = 6
+  (Os números coprimos menores que 9 são: 1, 2, 4, 5, 7, 8)
+
+TESTE 5: SISTEMA CRIPTOGRÁFICO RSA
+Configuração Inicial (Geração de Chaves):
+  Primo p escolhido: 61
+  Primo q escolhido: 53
+  Módulo n calculado (p * q): 3233
+  Totiente Phi(n) calculado ((p-1)*(q-1)): 3120
+  Expoente Público 'e' escolhido: 17  (Nota: MDC(17, 3120) == 1)
+  Expoente Privado 'd' calculado: 2753 (Nota: (17 * 2753) % 3120 == 1)
+
+Operação de Cifragem:
+  Mensagem Original (M) = 65
+  Fórmula: C = (65^17) % 3233
+  Saída Cifrada (C) = 2790
+
+Operação de Decifragem:
+  Texto Cifrado recebido (C) = 2790
+  Fórmula: M = (2790^2753) % 3233
+  Saída Decifrada (M) = 65
