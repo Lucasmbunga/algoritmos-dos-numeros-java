@@ -44,15 +44,18 @@ Configuração Inicial (Geração de Chaves):
   Primo q escolhido: 53
   Módulo n calculado (p * q): 3233
   Totiente Phi(n) calculado ((p-1)*(q-1)): 3120
-  Expoente Público 'e' escolhido: 17  (Nota: MDC(17, 3120) == 1)
-  Expoente Privado 'd' calculado: 2753 (Nota: (17 * 2753) % 3120 == 1)
+  Expoente Público 'e' escolhido: 65537
+  Expoente Privado 'd' calculado: 2753
 
 Operação de Cifragem:
-  Mensagem Original (M) = 65
+  Mensagem Original (M) = "Olá Mundo! RSA funcionando"
   Fórmula: C = (65^17) % 3233
   Saída Cifrada (C) = 2790
 
 Operação de Decifragem:
-  Texto Cifrado recebido (C) = 2790
-  Fórmula: M = (2790^2753) % 3233
-  Saída Decifrada (M) = 65
+  Texto Cifrado (Representação Numérica): [1307, 745, 205, 2017, 1992, 3123, 2160, 2235, 1773, 2185, 1853, 1992, 1859, 2680, 2790, 1992, 1369, 2160, 2235, 281, 3179, 2185, 2235, 1632, 2235, 1773, 2185]
+  Texto Decifrado: Olá Mundo! RSA funcionando
+
+  --- Chaves Geradas ---
+  Chave Pública (e):
+

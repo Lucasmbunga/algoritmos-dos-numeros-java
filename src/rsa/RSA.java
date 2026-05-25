@@ -114,7 +114,7 @@ public class RSA {
         System.out.println("Chave Privada (d): " + rsa.d);
 
         // Mensagem de texto complexa com acentuação e caracteres especiais
-        String textoOriginal = "Olá Mundo! RSA funcionando em Angola 🇦🇴";
+        String textoOriginal = "Olá Mundo! RSA funcionando";
         System.out.println("\nTexto Original: " + textoOriginal);
 
         // 1. Cifragem
